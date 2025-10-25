@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Name — Video Editor</title>
+  <meta name="description" content="Portfolio of Your Name, video editor. Showreel, selected projects, and contact.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="container">
+    <h1>Your Name <span class="muted">/ Video Editor</span></h1>
+    <nav>
+      <a href="#reel">Showreel</a>
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="reel">
+      <h2>Showreel</h2>
+      <!-- Replace the src with your own YouTube or Vimeo embed link -->
+      <div class="video-wrap">
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Showreel"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <section id="work">
+      <h2>Selected Work</h2>
+      <div class="grid">
+        <!-- Duplicate/modify these items. Replace thumbnail and links. -->
+        <article class="card">
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener">
+            <img src="images/thumb1.jpg" alt="Project 1 thumbnail" loading="lazy">
+            <h3>Project Title 1</h3>
+            <p>Short one-liner about what you did.</p>
+          </a>
+        </article>
+        <article class="card">
+          <a href="https://vimeo.com/76979871" target="_blank" rel="noopener">
+            <img src="images/thumb2.jpg" alt="Project 2 thumbnail" loading="lazy">
+            <h3>Project Title 2</h3>
+            <p>Short one-liner about your role and tools.</p>
+          </a>
+        </article>
+        <article class="card">
+          <a href="#" target="_blank" rel="noopener">
+            <img src="images/thumb3.jpg" alt="Project 3 thumbnail" loading="lazy">
+            <h3>Project Title 3</h3>
+            <p>Short one-liner about the project.</p>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>Write a short 2–3 sentence bio focusing on your editing strengths, software, and niches.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:you@yourdomain.com">you@yourdomain.com</a></p>
+      <p>Social: <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a> ·
+         <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></p>
+    </section>
+  </main>
+
+  <footer class="container muted small">
+    © <span id="year"></span> Your Name
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
