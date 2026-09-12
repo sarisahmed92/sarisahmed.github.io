@@ -9,7 +9,7 @@ header { display: flex; align-items: center; justify-content: space-between; gap
 h1 { font-size: 22px; margin: 0; }
 h2 { font-size: 22px; margin: 36px 0 16px; }
 h3 { font-size: 16px; margin: 8px 0 4px; }
-nav a { display: block; margin-left: 16px; padding: 8px 10px; border-radius: 10px; border: 1px solid #eee; }
+nav a { display: flex; margin-left: 16px; padding: 8px 10px; border-radius: 10px; border: 1px solid #eee; }
 nav a:hover { background: #f7f7f7; }
 .muted { color: #666; }
 .small { font-size: 12px; }
