@@ -248,7 +248,7 @@ footer {
 
 .youtube-preview {
   width: 100%;
-  max-width: 900px;
+  max-width: 1000px;
   margin: 2rem auto;
   aspect-ratio: 16 / 9;
   position: relative;
