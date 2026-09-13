@@ -1,3 +1,4 @@
+console.log("script loaded");
 document.querySelectorAll(".youtube-preview").forEach((preview) => {
     preview.querySelector("button").addEventListener("click", () => {
         const videoId = preview.dataset.videoId;
