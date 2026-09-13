@@ -2,13 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Saris Ahmed</title>
+    <title>Home Page - Saris Ahmed</title>
     <link
       href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300%7CCinzel+Decorative:700"
       rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">  
-    <link href="./style.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="./style.css" rel="stylesheet" />
+	<script src="script.js" defer></script>
   </head>
 
   <body>
@@ -36,19 +37,15 @@
     <main>
         <article class="showreel_container">
             <h1>Showreel</h1>
-            <iframe 
-                width="1100" 
-                height="600" 
-                src="https://www.youtube.com/embed/I4ZadlDJAZg" 
-                title="YouTube video player" 
-                frameborder="0"
-				controls="0"
-				rel="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                allowfullscreen
-                referrerpolicy="strict-origin-when-cross-origin">
-            </iframe>
-			</a>
+            <div class="youtube-preview" data-video-id="I4ZadlDJAZg">
+                <button type="button" aria-label="Play video">
+                    <img
+                    src="https://i.ytimg.com/vi/I4ZadlDJAZg/maxresdefault.jpg"
+                    alt=""
+                    >
+                    <span class="play-button">▶</span>
+                </button>
+            </div>
         </article>
     </main>
 
