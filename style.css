@@ -3,7 +3,10 @@
 /*****************/
 
 body {
+  min-height: 100vh;
   margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 html {
@@ -50,7 +53,7 @@ li {
 
 h1 {
   font-size: 5rem;
-  text-align: left;
+  text-align: center;
 }
 
 h2 {
@@ -118,18 +121,13 @@ nav a {
 /***************/
 
 main {
+  flex: 1;
   display: flex;
   gap: 10px;
 }
 
 article {
   flex: 4;
-}
-
-.showreel_container {
-  display: grid;
-  place-items: center;
-  /* border: 1px solid black; */
 }
 
 .grid {
@@ -174,6 +172,28 @@ article .grid:nth-child(odd) {
   background-color: #8a8a8a40;
 }
 
+.about {
+  margin-top: 5rem;
+  display: flex;
+  gap: 10rem;
+}
+
+.about p {
+  width: 50%;
+  font-size: 2rem;
+}
+
+.email p {
+  margin-top: 15rem;
+  justify-self: center;
+  text-align: center;
+  font-size: 3rem;
+}
+
+/* .email a{
+  text-decoration: none;
+} */
+
 aside {
   flex: 1;
 }
@@ -189,10 +209,15 @@ aside img {
 }
 
 footer {
+  padding-top: 1rem; 
   width: 105%;
-  border-top: 1.5px solid black;
-  margin-top: 5rem;
+  margin-top: auto;
   text-align: right;
+}
+
+footer p {
+  padding-top: 1.5rem;
+  border-top: 1.2px solid black;
 }
 
 /********************/
@@ -266,7 +291,6 @@ footer {
 
 .youtube-reel-preview {
   width: 100%;
-  max-width: 1000px;
   margin: 2rem auto;
   aspect-ratio: 16 / 9;
   position: relative;
@@ -318,11 +342,14 @@ footer {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  zoom: 200%;
 
   padding: 0.7rem 1rem;
   color: white;
   background: #e62117;
   border-radius: 0.7rem;
   font-size: 1.5rem;
+}
+
+.youtube-reel-preview .play-button {
+  zoom: 200%;
 }
