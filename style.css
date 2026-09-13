@@ -42,7 +42,7 @@ h2 {
   font-family: "Fraunces", serif;
   color: #212121;
   font-weight: bold;
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 
 p,
@@ -187,12 +187,8 @@ article .grid:nth-child(odd) {
   margin-top: 15rem;
   justify-self: center;
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
-
-/* .email a{
-  text-decoration: none;
-} */
 
 aside {
   flex: 1;
@@ -209,15 +205,24 @@ aside img {
 }
 
 footer {
-  padding-top: 1rem; 
   width: 105%;
   margin-top: auto;
   text-align: right;
+  border-top: 1.2px solid black;
 }
 
-footer p {
-  padding-top: 1.5rem;
-  border-top: 1.2px solid black;
+footer ul {
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+}
+
+footer li {
+  font-size: 1.5rem;
+}
+
+.footer_space {
+  flex: 3;
 }
 
 /********************/
