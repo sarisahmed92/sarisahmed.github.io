@@ -189,8 +189,17 @@ footer {
 .dropdown .dropbtn::after {
   content: url("images/chevron-down.svg");
   zoom: 70%;
-  margin-top: 0.8rem;
+  padding-top: 0.8rem;
   margin-right: -0.5rem;
+  transition: transform 0.2s ease;
+}
+
+.dropdown:hover .dropbtn::after {
+  content: url("images/chevron-down.svg");
+  zoom: 70%;
+  padding-bottom: -0.8em;
+  margin-right: -0.5rem;
+  transform: rotate(0.5turn);
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
