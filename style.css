@@ -200,6 +200,8 @@ footer {
   padding-bottom: -0.8em;
   margin-right: -0.5rem;
   transform: rotate(0.5turn);
+  -webkit-mask: url("images/chevron-down.svg") center / contain no-repeat;
+  mask: url("images/chevron-down.svg") center / contain no-repeat;
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
