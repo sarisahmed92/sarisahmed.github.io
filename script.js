@@ -5,6 +5,8 @@ document.querySelectorAll(".youtube-preview").forEach((preview) => {
 
         preview.innerHTML = `
             <iframe
+                width="1280"
+                height="720"
                 src="https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0"
                 title="YouTube video player"
                 frameborder="0"
