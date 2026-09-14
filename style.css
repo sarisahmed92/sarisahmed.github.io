@@ -181,7 +181,7 @@ article .grid:nth-child(odd) {
 @media (max-width: 700px) {
   .about {
     /* display: block; */
-    flex-direction: row;
+    flex-direction: column;
     gap: 2rem;
     margin-top: 4rem;
   }
