@@ -186,8 +186,7 @@ article .grid:nth-child(odd) {
     margin-top: 4rem;
   }
 
-  .about p,
-  .about img {
+  .about p {
     width: 100%;
     flex: 0 1 auto;
   }
