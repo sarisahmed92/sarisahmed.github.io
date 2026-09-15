@@ -1,5 +1,3 @@
-console.log("script loaded");
-
 document.querySelectorAll(".youtube-preview").forEach((preview) => {
   const button = preview.querySelector("button");
 
@@ -18,3 +16,15 @@ document.querySelectorAll(".youtube-preview").forEach((preview) => {
     `;
   });
 });
+
+const menuButton = document.querySelector(".menu-toggle");
+const siteNav = document.querySelector("#site-nav");
+console.log(menuButton, siteNav);
+
+if (menuButton && siteNav) {
+  menuButton.addEventListener("click", () => {
+    const isOpen = siteNav.classList.toggle("is-open");
+
+    menuButton.setAttribute("aria-expanded", isOpen);
+  });
+}

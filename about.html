@@ -16,10 +16,18 @@
   <body>
     <header>
 		<!-- Main Menu goes here -->
-        <nav class="navbar">
+        <a class="saris" rel="home" href="index.html" title="Saris Ahmed" itemprop="url">Saris Ahmed</a>
+        <button 
+            class="menu-toggle"
+            type="button" 
+            style="background: none; border: none; padding: 0; cursor: pointer;"
+            aria-controls="site-nav"
+            aria-expanded="false">
+            <img src="images/thin_hamburger_trimmed.png" alt="Description of button">
+        </button>
+        <nav class="navbar" id="site-nav">
             <ul>
-                <li><a class="saris" rel="home" href="index.html" title="Saris Ahmed" itemprop="url">Saris Ahmed</a></li>
-                <li class="header_space"></li>
+                <!-- <li class="header_space"></li> -->
                 <li>
                     <div class="dropdown">
                         <button class="dropbtn">Work</button>
@@ -28,6 +36,7 @@
                             <a href="documentary.html">Documentary</a>
                             <a href="events.html">Events</a>
                         </div>
+                    </div>
                 </li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -39,7 +48,17 @@
         <article>
             <h1>About</h1>
                 <div class="about">
-                    <img src="images/portrait_trimmed.jpg" alt="Photo of me" height="700">
+                    <!-- <img src="images/portrait_trimmed.jpg" alt="Photo of me" height="700"> -->
+                    <picture>
+                        <source
+                            media="(max-width: 700px)"
+                            srcset="images/portrait_mobile2.jpg">
+
+                        <img
+                            src="images/portrait_trimmed.jpg"
+                            alt="Photo of me"
+                            height="700">
+                    </picture>
                     <p>Hi, I'm Saris. I'm an editor, filmmaker, and occasional motion graphics artist based in Los Angeles. My work spans narrative short films, commercials, documentaries and social media. You can see examples of my work under the "Work" tab above, with included details for each project. The <a href="file:///home/saris/Documents/web-projects/sarisahmed/narrative.html">Narrative</a> page is a good place to start if you want to see my editing.
                     <br><br>
                     As an editor, I work primarily in DaVinci Resolve and Adobe Premiere, and for motion graphics I mainly use Adobe After Effects. I am also an experienced videographer-- for samples of that, check out the <a href="file:///home/saris/Documents/web-projects/sarisahmed/events.html">Events</a> page, all of which was shot by me. 

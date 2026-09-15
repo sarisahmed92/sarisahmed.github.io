@@ -7,6 +7,7 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
+  font-family: "Hanken Grotesk", sans-serif;
 }
 
 html {
@@ -37,8 +38,7 @@ body {
 /* Typography */
 /**************/
 
-h1,
-h2 {
+h1 {
   font-family: "Fraunces", serif;
   color: #212121;
   font-weight: bold;
@@ -47,7 +47,6 @@ h2 {
 
 p,
 li {
-  font-family: "Hanken Grotesk", sans-serif;
   color: #2a2a2a;
 }
 
@@ -78,42 +77,111 @@ h1 {
 }
 
 header {
+  width: 100%;
   margin-top: 3%;
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid black; */
 }
 
 .saris {
-  margin-left: -1.5rem;
-}
-
-.header_space  {
-  flex: 3;
+  margin-left: 1.5rem;
+  align-self: center;
 }
 
 nav ul {
+  display: grid;
+  grid-auto-flow: column;
   padding: 0;
   list-style-type: none;
-  display: flex;
 }
 
 nav li {
-  text-align: center;
+  flex: 0 0 auto;
   padding-left: 2rem;
   padding-right: 2rem;
+  white-space: nowrap;
 }
 
 nav a,
+.saris,
 .dropdown .dropbtn {
-  font-size: 2.3rem;
-  /* text-transform: uppercase; */
-  /* font-weight: bold; */
+  font-size: 2.4rem;
   text-decoration: none;
   color: black;
   display: block;
 }
 
 nav a {
-  flex: 0 0 auto;
+  /* flex: 0 0 auto; */
   white-space: nowrap;
+}
+
+.menu-toggle {
+  display: none;
+  justify-self: right;
+}
+
+@media screen and (max-width: 700px) {
+  header {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  h1 {
+    margin-top: 5rem;
+    font-size: 9rem;
+  }
+
+  .saris {
+    flex: 1 1 auto;
+    margin: 1rem 0 0 3rem;
+    font-size: 4rem;
+  }
+  
+  .menu-toggle {
+    /* zoom: 150%; */
+    display: block;
+    margin-left: auto;
+    margin-right: 3rem;
+  }
+
+  #site-nav {
+    display: none;
+    flex: 0 0 100%;
+    order: 3;
+    width: 100%;
+    text-align: center;
+  }
+
+  nav ul {
+    margin-top: 4rem;
+    border: 2px solid black;
+    padding: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  nav a,
+  .dropdown .dropbtn {
+    font-size: 6rem;
+    text-decoration: none;
+    color: #141414;
+    display: block;
+  }
+
+  .dropdown .dropbtn {
+    padding-left: 3rem;
+  }
+
+  #site-nav.is-open {
+    display: flex !important;
+    justify-content: center;
+  }
+
+  #site-nav.is-open ul {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /***************/
@@ -202,15 +270,20 @@ article .grid:nth-child(odd) {
     max-width: 100%;
     flex: none;
     margin: 0;
-    font-size: clamp(1.4rem, 6vw, 5rem);
+    font-size: clamp(1.4rem, 6.5vw, 5rem);
     overflow-wrap: break-word;
+    margin-top: 2rem;
+    padding-right: 1rem;
+    /* text-align: justify; */
+    /* hyphens: auto; */
   }
 
-  .about img {
+  .about img,
+  .about picture {
     width: 100%;
     max-width: 100%;
     height: auto;
-    /* align-self: center; */
+    align-self: center;
   }
 }
 
@@ -264,7 +337,8 @@ footer li {
   footer li {
     flex: none;
     align-self: right;
-    padding-bottom: 0.3rem 0;
+    padding-bottom: 0.3rem;
+    font-size: clamp(1.4rem, 5vw, 4rem);
   }
 
   .footer_space {
@@ -336,6 +410,12 @@ footer li {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+@media screen and (max-width: 700px) {
+  .dropdown-content a {
+  font-size: 5rem;
+}
 }
 
 /*******************/

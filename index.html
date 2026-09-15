@@ -16,10 +16,18 @@
   <body>
     <header>
 		<!-- Main Menu goes here -->
-        <nav class="navbar">
+        <a class="saris" rel="home" href="index.html" title="Saris Ahmed" itemprop="url">Saris Ahmed</a>
+        <button 
+            class="menu-toggle"
+            type="button" 
+            style="background: none; border: none; padding: 0; cursor: pointer;"
+            aria-controls="site-nav"
+            aria-expanded="false">
+            <img src="images/hamburger_trimmed.png" alt="Description of button">
+        </button>
+        <nav class="navbar" id="site-nav">
             <ul>
-                <li><a class="saris" rel="home" href="index.html" title="Saris Ahmed" itemprop="url">Saris Ahmed</a></li>
-                <li class="header_space"></li>
+                <!-- <li class="header_space"></li> -->
                 <li>
                     <div class="dropdown">
                         <button class="dropbtn">Work</button>
