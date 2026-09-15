@@ -252,13 +252,15 @@ article .grid:nth-child(odd) {
 
 .about {
   margin-top: 5rem;
+  padding-left: 5rem;
   display: flex;
-  gap: 10rem;
+  gap: 5rem;
 }
 
 .about p {
   width: 100%;
   font-size: 2rem;
+  padding-right: 10rem;
 }
 
 @media (max-width: 700px) {
