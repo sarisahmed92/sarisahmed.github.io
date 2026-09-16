@@ -187,12 +187,12 @@ nav a {
     margin-top: 4rem;
     border: 2px solid black;
     padding: 2rem;
-    margin-bottom: -2rem;
+    margin-bottom: 0;
   }
 
   nav a,
   .dropdown .dropbtn {
-    font-size: 4rem;
+    font-size: 3rem;
     text-decoration: none;
     color: #141414;
     display: block;
@@ -245,7 +245,6 @@ article {
   height: auto;
 
   margin: 2rem auto;
-  padding: 1.5rem;
   box-sizing: border-box;
 
   display: grid;
@@ -324,7 +323,28 @@ footer li {
 }
 
 @media (max-width: 700px) {
-    .about {
+  .grid {
+    width: 95%;
+    padding: 0 1rem;
+    
+    margin: none;
+    gap: none;
+
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr;
+    justify-items: left;
+
+  }
+
+  .grid p {
+    padding: 0;
+    margin: 0;
+
+    margin-left: 2rem;
+    margin-top: -6rem;
+  }
+
+  .about {
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;
@@ -357,8 +377,7 @@ footer li {
     align-self: center;
   }
 
-  .heading_nar,
-  .heading_doc {
+  .heading {
     font-size: 4rem;
   }
 
@@ -382,7 +401,7 @@ footer li {
     flex: none;
     align-self: right;
     padding-bottom: 0.3rem;
-    font-size: clamp(1.4rem, 3vw, 4rem);
+    font-size: clamp(1rem, 3vw, 4rem);
   }
 
   .footer_space {
@@ -514,7 +533,7 @@ footer li {
 /* Youtube styling */
 /*******************/
 
-.showreel_container .youtube-preview{
+.showreel_container .youtube-preview {
   width: 100%;
   max-width: none;
   margin: 2rem auto;
@@ -575,4 +594,10 @@ footer li {
 
 .showreel_container .play-button {
   zoom: 200%;
+}
+
+@media screen and (max-width: 700px) {
+  .showreel_container .youtube-preview{
+    width: 90%;
+  }
 }
