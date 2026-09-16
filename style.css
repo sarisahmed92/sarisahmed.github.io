@@ -163,6 +163,26 @@ nav a {
     text-align: center;
   }
 
+  /* Hamburger dropdown animation */
+  /* #site-nav {
+  display: block;
+
+  flex: 0 0 100%;
+  max-height: 0;
+  overflow: hidden;
+  text-align: center;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-0.5rem);
+
+  transition:
+    max-height 0.25s ease,
+    opacity 0.2s ease,
+    transform 0.2s ease,
+    visibility 0s linear 0.25s;
+  } */
+
   nav ul {
     margin-top: 4rem;
     border: 2px solid black;
@@ -186,6 +206,16 @@ nav a {
     display: flex !important;
     justify-content: center;
   }
+
+  /* Hamburger dropdown animation */
+  /* #site-nav.is-open {
+    max-height: 30rem;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+
+    transition-delay: 0s;
+  } */
 
   #site-nav.is-open ul {
     display: flex;
@@ -399,7 +429,9 @@ footer li {
   text-decoration: underline;
 }
 
-.dropdown-content {
+/* Pre dropdown animation settings */
+
+/* .dropdown-content {
   display: none;
   position: absolute;
   background-color: rgb(188, 188, 188);
@@ -407,6 +439,25 @@ footer li {
   min-width: 120px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+} */
+
+.dropdown-content {
+  position: absolute;
+  background-color: rgb(188, 188, 188);
+  border: 1px solid black;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(-0.5rem);
+
+  transition:
+    opacity 0.15s ease,
+    transform 0.15s ease,
+    visibilty 0s linear 0.15s;
 }
 
 .dropdown-content a {
@@ -420,13 +471,40 @@ footer li {
 }
 
 .dropdown:hover .dropdown-content {
-  display: block;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0);
+
+  transition-delay: 0s;
+}
+
+#drop_font {
+  display: none;
 }
 
 @media screen and (max-width: 700px) {
+  nav ul {
+    /* position: absolute; */
+    background-color: rgb(188, 188, 188);
+  }
+
+  .dropdown-content {
+    position: absolute;
+    z-index: 2;
+  }
+
   .dropdown-content a {
-  font-size: 3rem;
-}
+    font-size: 3rem;
+  }
+
+  .dropdown {
+    display: none;
+  }
+
+  #drop_font {
+    display: block;
+  }
 }
 
 /*******************/
