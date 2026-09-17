@@ -269,6 +269,7 @@ article {
 
 .grid p {
   padding: 0;
+  padding-right: 1rem;
   margin: 0;
 }
 
@@ -541,6 +542,8 @@ footer li {
   aspect-ratio: 16 / 9;
   position: relative;
   overflow: hidden;
+  border: 10px solid #0f0f0f;
+  border-radius: 6px;
 }
 
 .youtube-preview {
@@ -550,6 +553,8 @@ footer li {
   aspect-ratio: 16 / 9;
   position: relative;
   overflow: hidden;
+  border: 5px solid #0f0f0f;
+  border-radius: 3px;
 }
 
 .youtube-preview button,
