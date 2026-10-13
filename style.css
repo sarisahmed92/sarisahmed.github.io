@@ -537,7 +537,8 @@ footer li {
   border-radius: 6px;
 }
 
-.youtube-preview {
+.youtube-preview,
+.youtube-image {
   width: 100%;
   max-width: 600px;
   margin: 2rem auto;
@@ -550,12 +551,14 @@ footer li {
 
 .youtube-preview button,
 .youtube-preview iframe,
-.youtube-preview img {
+.youtube-preview img,
+.youtube-image img {
   width: 100%;
   height: 100%;
 }
 
-.youtube-preview iframe {
+.youtube-preview iframe,
+.youtube-image iframe {
   display: block;
   border: 0;
   width: 100%;
@@ -571,9 +574,14 @@ footer li {
   background: none;
 }
 
-.youtube-preview img {
+.youtube-preview img,
+.youtube-image img {
   display: block;
   object-fit: cover;
+}
+
+.youtube-image img {
+  aspect-ratio: 16 / 9;
 }
 
 .play-button {
